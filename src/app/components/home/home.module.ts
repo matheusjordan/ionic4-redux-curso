@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { SharedComponentModule } from '../../shared/components/shared-components.module';
 
 @NgModule({
   imports: [
@@ -16,8 +17,12 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+
+    SharedComponentModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage
+  ]
 })
 export class HomePageModule {}

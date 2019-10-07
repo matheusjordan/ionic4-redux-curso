@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-popover {
+    .popover-wrapper {
+        .popover-content {
+            position: absolute;
+            top: 54px !important;
+            left: auto !important;
+            right: 0px !important;
+        }
+    }
+}
